@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#536a88,#0B0C10);
+    
+   
+}
+.box{
+    height: 70%;
+    width: 50%;
+    background-color: #1f2833;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #164675;
+
+}
+.links{
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px 10px;
+}
+.home{
+   text-decoration: none;
+   color:#45A29E;
+   font-size: 25px;
+   padding: 10px;
+}
+.faqs{
+    text-decoration: none;
+   color:#45A29E;
+   font-size: 25px;
+   padding: 10px;
+}
+.contacts{
+    text-decoration: none;
+   color:#45A29E;
+   font-size: 25px;
+   padding: 10px;
+}
+.profile{
+    padding-top: 40px;
+    justify-content: center;
+    color: #45A29E;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.date{
+    color: #45A29E;
+    font-weight: 500;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #66fcf1;
+    border-width: 2px;
+}
+.year{
+    color: #45A29E;
+    border-radius: 5px;
+    border-color: #66fcf1;
+    height: 25px;
+    width: 100px;
+    border-width: 2px;
+   
+}
+.branch{
+    color: #45A29E;
+    border-radius: 5px;
+    border-color: #66fcf1;
+    height: 25px;
+    width: 100px;
+    border-width: 2px;
+}
+.full-name{
+    color: #45A29E;
+    border-radius: 5px;
+    border-color: #66fcf1;
+    height: 25px;
+    width: 200px;
+    border-width: 2px;
+}
+.ph{
+    color: #45A29E;
+    border-radius: 5px;
+    border-color: #66fcf1;
+    height: 25px;
+    width: 150px;
+    border-width: 2px;
+}
+.button{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    padding: 5px;
+}
+.submit{
+    padding: 5px;
+    border-color:#66fcf1 ;
+    border-radius: 5px;
+    background:#45A29E ;
+}
+.reset{
+    padding: 5px;
+    border-color:#66fcf1 ;
+    border-radius: 5px;
+    background:#45A29E ;
+}
