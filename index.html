@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div id="bg"></div>
+  <h2 class="welcome">Welcome IITR-Junta</h2>
+
+
+
+
+<form>
+  <div class="form-field">
+    <input type="email" placeholder="Email / Username" id="email" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" id="password" required/>                         </div>
+  
+  <div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+</form>
+<!-- partial -->
+<div id="result"></div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const resultDiv = document.getElementById('result');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('http://localhost:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+
+            const data = await response.json();
+            resultDiv.innerText = data.message;
+        });
+    </script>
+  
+</body>
+<script src="./index.js"></script>
+
+</html>
